@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WEB SHOP ONLINE</title>
+	<link rel="stylesheet" href="./flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="./jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" language="javascript" src="./main.js"></script>
+</head>
+
+<body>
+	<div id="website">
+		<! top>
+		<div id="top">
+			<div id="top-left">
+				<ul>
+					<li><a href="#"><img src="./images/iconfa.png" /></a></li>
+					<li><a href="#"><img src="./images/icong+.png" /></a></li>
+				</ul>	
+			</div>
+			<div id="top-right">
+				<ul>
+					<li><a href="#"><img src="./images/enter.png" /></a></li>
+					<li><a href="#">Đăng Nhập</a></li>
+					<li>|</li>
+					<li><a href="#">Đăng Ký</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<! header>
+		<div id="header">
+			<div style="float: left; width: 250px; height: 54px; margin: 65px 0 0 35px; border: 1px solid #000000;"></div>
+			<div style="float: right; width: 400px; height: 93px;">
+				<div id="shopcart">
+					<img src="./images/shopping-cart.png">
+					<div id="inforcart">
+						<p>0 Sản Phẩm</p>
+						<P>0 đ</P>
+					</div>
+				</div>
+			</div>
+			<div style="float: right; width: 400px; height: 60px;">
+				<div id="head-phone">
+					<p>HOTLINE: 68686868</p>
+				</div>
+				<div id="search-box">
+					<form id="search-form">
+						<input id="textsearch" type="text" placeholder="Search for here..."/>
+						<button id="search-button" type="submit"></button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!MENU>
+		<div id="menu">
+			<ul>
+				<img src="./images/iconhome.png" />
+				<li><a href="#">Trang Chủ</a></li>
+				<li><a href="#">Shop For Men</a></li>
+				<li><a href="#">Shop For Nữ</a></li>
+				<li><a href="#">Siêu Thị Điện Tử</a></li>
+				<li><a href="#">Khuyến Mãi</a></li>
+				<li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+				<li style="border-right: 0px;"><a href="#">Liên Hệ</a></li>
+			</ul>
+		</div>
+		<!slide bar>
+		<div id="abs">
+			<div id="abs-left">
+				<section class="slider">
+        			<div class="flexslider">
+          				<ul class="slides">
+            				<li><img src="./images/sale-1.jpg" /></li>
+							<li><img src="./images/sale-2.jpg" /></li>
+							<li><img src="./images/sale-3.png" /></li>
+							<li><img src="./images/sale-4.jpg" /></li>
+         				</ul>
+        			</div>
+     			</section>
+			</div>
+			<!-- jQuery -->
+			  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+			  <!-- FlexSlider -->
+			  <script defer src="./jquery.flexslider.js"></script>
+
+			  <script type="text/javascript">
+				$(function(){
+				  SyntaxHighlighter.all();
+				});
+				$(window).load(function(){
+				  $('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+					  $('body').removeClass('loading');
+					}
+				  });
+				});
+			  </script>
+			<div id="abs-right">
+				
+			</div>
+		</div>
+		
+		<div class="clr"></div>
+		
+		<! phan main>
+		<div id="main">
+			<div id="main-left">
+				<div id="menu-left">
+					<ul class="menu">
+						<li><a href="#">Ten</a></li>
+						<li><a href="#">Hang</a>
+							<ul>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Gia</a></li>
+					</ul>
+				</div>
+			</div>
+			<script>
+			$(Document).ready(function(){
+	$(".menu li").hover(function(){
+		$(this).find("ul:first").slideDown(500);
+	}, function(){
+		$(this).find("ul:first").hide(300);	
+	};)};
+			</script>
+			<div id="main-right"></div>
+		</div>
+		
+	</div>
+</body>
+</html>
+
+
+
+
