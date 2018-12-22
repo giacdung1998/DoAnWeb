@@ -2,9 +2,7 @@
 
 <?php 
 
-    /**
-    * 
-    */
+  
     class Database
     {
         /**
@@ -15,11 +13,10 @@
 
         public function __construct()
         {
-            $this->link = mysqli_connect("localhost","root","","") or die ();
+            $this->link = mysqli_connect("localhost","root","","webbanhang") or die ();
             mysqli_set_charset($this->link,"utf8");
         }
 
-        
 
         /**
          * [insert description] hàm insert 
